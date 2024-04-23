@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+
+    <title>Tienda Sanrio</title>
+</head>
+
+<body>
+    <header class="">
+        <div class="shadow-sm bg-body rounded">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/Sanrio-Logo.png" alt="Sanrio" width="100" height="50">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link enlace-nav active" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link enlace-nav active" aria-current="page" href="#">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link enlace-nav active" href="tienda.html">Tienda</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link enlace-nav dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Colaboraciones
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Bershka</a></li>
+                                    <li><a class="dropdown-item" href="#">Miniso</a></li>
+                                    <li><a class="dropdown-item" href="#">Shein</a></li>
+                                    <li><a class="dropdown-item" href="#">McDonald's</a></li>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+    <div class="container mt-5 altura">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <form id="formulario-venta">
+                    <h1 id="register">Adopta un Sanrio</h1>
+                    <div class="progress my-4" role="progressbar" aria-label="Proceso de compra" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" id="formulario-progress-bar" style="width: 25%"></div>
+                    </div>
+                    <div class="tab choose-sanrio">
+                        <h3 class="text-center">Elige tu Sanrio</h3>
+                        <div class="row">
+                            <div class="col-3">
+                                <!-- Elegir Sanrio -->
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="hellokitty" checked>
+                                    <img src="./img/hellokitty.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="mymelody">
+                                    <img src="./img/mymelody.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="kuromi">
+                                    <img src="./img/kuromi.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="chococat">
+                                    <img src="./img/chocolat.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="cinamonroll">
+                                    <img src="./img/cinamonroll.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="keropi">
+                                    <img src="./img/keroppi.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="pochacco">
+                                    <img src="./img/pochacco.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>
+                                    <input type="radio" name="sanrioSelect" value="pompompurin">
+                                    <img src="./img/pompompurin.png" alt="" class="img-fluid">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Datos Personales -->
+                    <div class="tab datos-personales">
+                        <h3>Datos Personales:</h3>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nameInput" placeholder="name">
+                            <label for="nameInput">Nombre</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="surnameInput" placeholder="surname">
+                            <label for="surnameInput">Apellidos</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="emailInput" placeholder="nombre@ejemplo.com"
+                                required>
+                            <label for="emailInput">Dirección de correo</label>
+                        </div>
+                        <div class="form-floating mb-3 ">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                required>
+                            <label for="floatingPassword">Contraseña</label>
+                        </div>
+
+                        <div class="form-floating mb-3 ">
+                            <input type="password" class="form-control" id="confirmPassword"
+                                placeholder="passwordConfirm" required>
+                            <label for="confirmPassword">Confirmación de contraseña</label>
+                        </div>
+
+                    </div>
+                    <!-- Datos de entrega -->
+                    <div class="tab datos-envio">
+
+                        <h3>Dirección de envío:</h3>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="street" placeholder="street">
+                            <label for="street">Calle</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="municipality" placeholder="municipality">
+                            <label for="municipality">Municipio</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="province" placeholder="province">
+                            <label for="province">Provincia</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="postalCode" placeholder="postalCode">
+                            <label for="postalCode">Código Postal</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="telephone" placeholder="telephone">
+                            <label for="telephone">Teléfono</label>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option value="1">España</option>
+                                <option value="2">Francia</option>
+                                <option value="3">Portugal</option>
+                                <option value="4">Italia</option>
+                                <option value="5">Alemania</option>
+                                <option value="6">Estados Unidos</option>
+                                <option value="7">Japón</option>
+                                <option value="8">Brasil</option>
+                                <option value="9">Canadá</option>
+                                <option value="10">Australia</option>
+                            </select>
+                            <label for="floatingSelect">País</label>
+                        </div>
+                        <p>Horario preferencia de entrega:</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Mañana (09:00 a 14:00)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Tarde (17:00 a 22:00)
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <!-- Datos de pago -->
+                    <div class="tab datos-pago">
+                        <h3>Datos pago</h3>
+
+                        <div class="form-floating mt-3">
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Tarjeta</option>
+                                <option value="1">Bizum</option>
+                                <option value="2">PayPal</option>
+                                <option value="3">Contra reembolso </option>
+                                <option value="4">Con gallinas </option>
+                                <option value="5">En kebabs </option>
+                            </select>
+                            <label>Opciones de pago</label>
+                        </div>
+                        <div class="d-flex justify-content-between my-3 gap-3">
+                            <div class="form-floating ">
+                                <input type="number" class="form-control" id="numberCard" placeholder="numberCard">
+                                <label for="numberCard">Nº de Tarjeta</label>
+                            </div>
+
+
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="CVC" placeholder="CVC ">
+                                <label for="CVC">CVC </label>
+                            </div>
+
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select" id="inputGroupSelect02">
+                                <option value="1" selected>Envío Estándar 3,90€ (7 a 9 días laborables)</option>
+                                <option value="2">Envío Express 2,90€ (7 a 10 días laborables)</option>
+                                <option value="3">Punto de Recogida 2,90€ (7 a 10 días laborables) </option>
+                                <option value="4">Envío Económico 1,90€ (10 a 12 días laborables) </option>
+                            </select>
+                            <label>Tipo de envío:</label>
+                        </div>
+
+
+                    </div>
+                    <div class="tab suscripcion">
+                        <h4>Preferencias de suscripción:</h4>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="boletin-informativo"
+                                checked>
+                            <label class="form-check-label" for="boletin-informativo">Me gustaría recibir boletines
+                                informativos por correo electrónico.</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="ofertas-promociones"
+                                checked>
+                            <label class="form-check-label" for="ofertas-promociones">Me gustaría recibir ofertas
+                                especiales y promociones por correo electrónico.</label>
+                        </div>
+                        <h4>Términos y condiciones:</h4>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="terminos-condiciones">
+                            <label class="form-check-label" for="terminos-condiciones">He leído y acepto los
+                                términos y condiciones del sitio web</label>
+                        </div>
+                    </div>
+
+
+                    <div class="thanks-message text-center p-5" id="text-message"> <img src="/img/hello-kitty.gif"
+                            width="100" class="mb-4">
+                        <h3>¡Muchas gracias por adoptar un Sanrio!</h3> <span>Tu Sanrio está haciendo la maleta para
+                            mudarse contigo. <br>¡Qué nervios!</span>
+                    </div>
+                    <div id="buttonControl" class="d-flex justify-content-between mt-4">
+                        <button type="reset" class="btn btn-primary" onclick="nextPrev('reset')">Borrar
+                            formulario</button>
+                        <div>
+                            <button type="button" class="btn btn-primary" id="prevBtn"
+                                onclick="nextPrev(-1)">Previous</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn"
+                                onclick="nextPrev(1)">Next</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="./img/Sanrio-Logo.png" alt="Sanrio" width="100" height="50">
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2024 Eva Alonso Medina</span>
+            </div>
+
+        </footer>
+    </div>
+
+
+</footer>
+
+
+</html>
