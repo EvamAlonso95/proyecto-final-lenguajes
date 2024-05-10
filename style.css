@@ -10,6 +10,7 @@ body {
     background: url('./img/Fondo\ De\ Pantalla\ Gatito.jfif');
     font-family: sans-serif;
     font-size: 16px;
+
 }
 
 h1,
@@ -80,6 +81,9 @@ h2 {
     object-fit: scale-down;
 }
 
+
+/* FOOTER */
+
 footer {
     background: #cac5ed;
     height: auto;
@@ -104,20 +108,40 @@ footer {
     letter-spacing: 1.2px;
 }
 
+
+/* JUMBOTRON */
+
+
 .jumbotron {
+    background: #8CE7CD;
+    /* padding: 25px; */
+
+    h1,
     p {
+        margin-top: 30px;
+        text-align: center;
         text-wrap: balance;
     }
+
+    .boton {
+        background-color: #e8b1ff;
+
+    }
+
 }
 
-
-
-
+.cookie-alert {
+    position: fixed;
+    bottom: 0;
+    margin-right: 10px;
+    z-index: 9999999;
+    right: 0;
+}
 
 /* FORMULARIO */
 
-.altura {
-    height: 80%;
+.container-tienda {
+    min-height: calc(100vh - 76px - 83px);
 }
 
 #formulario-venta {
@@ -128,7 +152,6 @@ footer {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 2px 10px 10px -8px rgba(0, 0, 0, 0.75);
-
 
 
     p,
@@ -158,10 +181,6 @@ footer {
 
     }
 
-
-    /* button:hover {
-        opacity: 0.8
-    } */
     .choose-sanrio {
         input {
             display: none;
@@ -419,29 +438,7 @@ footer {
     }
 }
 
-/* Jumbotron */
 
-
-.jumbotron {
-    background: #8CE7CD;
-    /* padding: 25px; */
-
-    h1,
-    p {
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .boton {
-        background-color: #e8b1ff;
-
-
-
-
-    }
-
-
-}
 
 /* LOGIN & SING UP*/
 .modal-form {
@@ -471,18 +468,13 @@ footer {
     }
 }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
 
 
 .container-form {
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100%;
+    min-height: calc(100vh - 76px - 83px);
     width: 100%;
 
 }
